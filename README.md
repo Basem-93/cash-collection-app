@@ -1,44 +1,47 @@
 # Cash Collection Application
 
-## Introduction
+This repository contains a Django project for a Cash Collection application with RESTful APIs.
 
-This project implements a Cash Collection application with a Django backend that provides RESTful APIs for managing cash collection tasks and collectors.
+## Overview
 
-## Prerequisites
+The Cash Collection application is designed to manage cash collection tasks performed by Cash Collectors, ensuring accountability and transparency in the process.
 
-Before running the project, ensure you have the following installed:
-- Python (version 3.6 or higher)
-- Django
-- Django REST Framework
+## Features
 
-## Setup
+- **Task Management**: Manage tasks assigned to Cash Collectors.
+- **Cash Collection**: Record and track cash collected from customers.
+- **Manager Interaction**: Enable interaction between Cash Collectors and Managers.
+- **Freeze Mechanism**: Automatically freeze Cash Collectors with large amounts for extended periods.
 
-1. Clone the repository:
+## Installation
 
+1. **Clone the Repository:**
    ```bash
-   git clone <repository_url>
-   cd cashcollection
+   git clone https://github.com/Basem-93/cash-collection-app.git
+   cd cash-collection-app
+Set Up Virtual Environment:
 
-   
-Install dependencies:
-   bash
-   pip install -r requirements.txt
+bash
+Copy code
+python -m venv .venv
+source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+Install Dependencies:
 
-Apply database migrations:
-   bash
-   python manage.py makemigrations
-   python manage.py migrate
+bash
+Copy code
+pip install -r requirements.txt
+Database Migration:
 
-Create a superuser (for accessing Django admin):
-   bash
-   python manage.py createsuperuser
+bash
+Copy code
+python manage.py migrate
+Run Development Server:
 
-
-Start the development server:
-   bash
-   python manage.py runserver
-
-The server will start running at http://127.0.0.1:8000/.
+bash
+Copy code
+python manage.py runserver
+Access the Application:
+Open http://localhost:8000/ in your web browser.
 
 APIs
 
@@ -53,6 +56,7 @@ Endpoint: /api/next_task/
 Method: GET
 Description: Retrieves the next task that the CashCollector should do now.
 Request Body:
+json
 {
     "collector_id": 1,
 }
