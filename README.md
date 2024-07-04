@@ -21,16 +21,21 @@ Before running the project, ensure you have the following installed:
 
    
 Install dependencies:
-$pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 Apply database migrations:
-$python manage.py migrate
-$Create a superuser (for accessing Django admin):
-$python manage.py createsuperuser
+   ```bash
+   python manage.py migrate
+
+Create a superuser (for accessing Django admin):
+   ```bash
+   python manage.py createsuperuser
 
 
 Start the development server:
-$python manage.py runserver
+   ```bash
+   python manage.py runserver
 
 The server will start running at http://127.0.0.1:8000/.
 
