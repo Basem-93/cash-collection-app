@@ -15,37 +15,52 @@ The Cash Collection application is designed to manage cash collection tasks perf
 
 ## Installation
 
+# Cash Collection Application
+
+This repository contains a Django project for a Cash Collection application with RESTful APIs.
+
+## Overview
+
+The Cash Collection application is designed to manage cash collection tasks performed by Cash Collectors, ensuring accountability and transparency in the process.
+
+## Features
+
+- **Task Management**: Manage tasks assigned to Cash Collectors.
+- **Cash Collection**: Record and track cash collected from customers.
+- **Manager Interaction**: Enable interaction between Cash Collectors and Managers.
+- **Freeze Mechanism**: Automatically freeze Cash Collectors with large amounts for extended periods.
+
+## Installation
+
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/Basem-93/cash-collection-app.git
    cd cash-collection-app
 
-Set Up Virtual Environment:
+
+2. **Set Up Virtual Environment:
    ```bash
-   python -m venv .venv
-bash
-Copy code
-python -m venv .venv
+    python -m venv .venv
+    source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
 
-1. **Clone the Repository:**
+
+3. **Install Dependencies:
    ```bash
-Install Dependencies:
+    pip install -r requirements.txt
 
-bash
-Copy code
-pip install -r requirements.txt
-Database Migration:
 
-bash
-Copy code
-python manage.py migrate
-Run Development Server:
+4. **Database Migration:
+   ```bash
+    python manage.py migrate
 
-bash
-Copy code
-python manage.py runserver
+
+5. **Run Development Server:
+   ```bash
+    python manage.py runserver
+
+
 Access the Application:
-Open http://localhost:8000/ in your web browser.
+    Open http://localhost:8000/ in your web browser.
 
 APIs
 
