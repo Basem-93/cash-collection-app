@@ -19,12 +19,16 @@ The Cash Collection application is designed to manage cash collection tasks perf
    ```bash
    git clone https://github.com/Basem-93/cash-collection-app.git
    cd cash-collection-app
-Set Up Virtual Environment:
 
+Set Up Virtual Environment:
+   ```bash
+   python -m venv .venv
 bash
 Copy code
 python -m venv .venv
-source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+
+1. **Clone the Repository:**
+   ```bash
 Install Dependencies:
 
 bash
