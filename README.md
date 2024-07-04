@@ -64,18 +64,21 @@ Access the Application:
 
 APIs
 
+APIs
+
 1) Task List
 Endpoint: /api/tasks/
 Method: GET
 body: None
 Description: Retrieves a list of tasks that have been done by the CashCollector.
 
+
 2) Next Task
 Endpoint: /api/next_task/
 Method: GET
 Description: Retrieves the next task that the CashCollector should do now.
 Request Body:
-json
+```json
 {
     "collector_id": 1,
 }
@@ -86,6 +89,8 @@ Endpoint: /api/collector_status/
 Method: GET
 Description: Retrieves a flag indicating whether the CashCollector is frozen or not.
 Request Body:
+```json
+
 {
     "collector_id": 1,
 }
@@ -96,15 +101,18 @@ Endpoint: /api/collect/
 Method: POST
 Description: Records the amount collected for a specific task.
 Request Body:
+```json
+
 {
     "task_id": 1
 }
 
-7) Pay Cash
+8) Pay Cash
 Endpoint: /api/pay/
 Method: POST
 Description: Marks all collected tasks as paid to the manager and unfreezes the CashCollector.
 Request Body:
+```json
 {
     "collector_id": 1
 }
@@ -115,6 +123,7 @@ Endpoint: /api/create_task/
 Method: POST
 Description: Creates a new task for cash collection.
 Request Body:
+```json
 {
     "collector_id": 1,
     "customer_name": "John Doe",
@@ -128,6 +137,7 @@ Endpoint: /api/create_collector/
 Method: POST
 Description: Creates a new CashCollector user.
 Request Body:
+```json
 {
     "name": "omar zekry",
     "balance": 0,
